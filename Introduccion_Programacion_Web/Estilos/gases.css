@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: 33% 33% 33%; */
+    grid-template-columns: repeat(14, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.gases{
+    background-color: rgb(201, 91, 91);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}

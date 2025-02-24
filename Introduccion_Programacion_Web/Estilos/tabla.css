@@ -1,0 +1,31 @@
+table{
+    width:100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 12px; */
+    text-align: center;
+}
+
+th{
+    border: 1px solid black;
+    padding: 8px;
+    background-color: #2d208e;
+    text-align: center;
+    color: white
+}
+
+td{
+    border: 1px solid black;
+    padding: 8px;
+
+}
+
+div.table-container{
+    overflow-x: auto;
+    
+}
+
+
+
+
+

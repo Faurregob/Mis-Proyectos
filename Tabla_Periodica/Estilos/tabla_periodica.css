@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: darkcyan;
+    margin: 20px;
+    
+}
+
+h1{
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000;
+    color: white;
+    background-color: #7c3d3d;
+
+}
+
+div .elemento{
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.table1{
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 5px #000000;
+    border-radius: 10px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    background-color: white;
+    
+}
+
+.elemento{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    color: white;   
+}
+
+.metal-alcalino{
+    background-color: #055c63;
+    
+}
+
+.metaloides{
+    background-color: #6d5e4b;
+}
+
+.actinoides{
+    background-color: #76511a;
+}
+
+.actinoides1{
+    background-color: #76511a;
+}
+
+.No-metales-reactivos{
+    background-color: #2a4165;
+}
+
+.propiedades-desconocidas{
+    background-color: #3b3b3b;
+}
+
+.metales-transicionales{
+    background-color: #3d307c;
+}
+
+.gases-nobles{
+    background-color: #3d7c30;
+}
+
+.metales-postransicionales{
+    background-color: #7c3d3d;
+}
+.lantánidos{
+    background-color: #7c3d6d;
+}
+
+.lantánidos1{
+    background-color: #7c3d6d;
+    margin-top: 60px;
+}
+
+.metales-alcalinotérreos{
+    background-color: #3e1717;
+}
