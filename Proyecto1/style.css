@@ -1,0 +1,219 @@
+body{
+    background: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin: 20px;
+    box-shadow: 0 10px 40px rgb(5, 127, 227);
+    border-radius: 80%;
+    width: auto;
+}
+
+
+header {
+    /* Gradiente con colores semitransparentes */
+    background-color: rgba(14, 161, 224, 0.0);
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 70% 90% 70% 90%;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    max-width: 2500px;
+    
+    
+    
+}
+
+header:hover{
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;    
+    background: #ccc;
+    border-radius: 70% 35% 70% 35%; 
+    padding: 20px;
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.nav-item {
+    font-size: 24px;
+    font-style: italic;
+    border: 2px double;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    box-shadow: -20px 0 50px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Posiciones de ejemplo para que se solapen */ 
+.item1 { 
+    top: 20px; 
+    left: 70px; 
+    background-image: url(imagen1.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+}
+.item2 { 
+    top: 50px; 
+    left: 510px;
+    background-image: url(playa1.png); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;}
+.item3 { 
+    top: 20px; 
+    left: 950px;
+    background-image: url(descarga.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;}
+.item4 { 
+    top: 50px; 
+    left: 1390px;
+    background-image: url(foto1.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;}
+
+
+.nav-item:hover{
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+    z-index: 10; /* Este elemento se coloca por encima de los demás */
+}
+
+
+main{
+    flex: 3;
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px inset  salmon;
+    background-color: grey;
+    max-width: 600px;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+section, article, aside {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+section {
+    background-color: #D8C4B6;
+    border: 1px solid black;
+}
+
+article {
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+aside {
+    flex: 1;
+    background-color: blueviolet;
+    border: 5px inset #D8C4B6;
+    max-width: 400px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .nav-item {
+        width: 120px;
+        height: 120px;
+        font-size: 20px;
+    }
+    header {
+        font-size: 28px;
+        max-width: 250px;
+    }
+    main {
+        max-width: 100%;
+    }
+    aside {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        width: 100px;
+        height: 100px;
+        font-size: 18px;
+    }
+    header {
+        font-size: 24px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+    main, aside {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
