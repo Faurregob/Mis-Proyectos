@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕ Cafe & Co.</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../Imagenes/logo.png" alt="Logo del Café" class="logo-img">
+            <div class="slogan">El mejor café de la ciudad</div>
+        </div>
+        <div class="bg-2">
+            <h1 class="t-stroke-shadow">Café & Co.</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../Inicio/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="../Reservaciones/index.html"><i class="fas fa-calendar-alt"></i> Reservaciones</a></li>
+                <li><a href="#social-media-section"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="#carrito" id="carrito-link"><i class="fas fa-shopping-cart"></i> Carrito de Compras (<span id="cart-count">0</span>)</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="menu" class="menu-section">
+        <div class="menu-content">
+            <div class="filter-container">
+                <aside class="filter-panel">
+                    <h2>Filtrar por:</h2>
+                    <ul>
+                        <li><button class="filter-btn" data-category="todos"><i class="fas fa-utensils"></i> Todos los productos</button></li>
+                        <li><button class="filter-btn" data-category="panaderia"><i class="fas fa-bread-slice"></i> Panadería</button></li>
+                        <li><button class="filter-btn" data-category="bebidas"><i class="fas fa-mug-hot"></i> Bebidas</button></li>
+                        <li><button class="filter-btn" data-category="sandwiches"><i class="fas fa-hamburger"></i> Sandwiches</button></li>
+                        <li><button class="filter-btn" data-category="jugos"><i class="fas fa-cocktail"></i> Jugos / Cocteles</button></li>
+                    
+                        
+                    </ul>
+                </aside>
+            </div>
+            <div class="title-container">
+                <h1 class="titulo">Panadería</h1>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card panaderia">
+                    <img src="../Imagenes/galletas.webp"
+                        alt="Galletas de Avena con pasas" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Galletas de Avena</h3>
+                        <p class="product-description">Crujientes por fuera, tiernas por dentro, con trozos de pasas y
+                            un toque de canela. Ideales para un snack saludable.</p>
+                        <div class="container">
+                            <div class="botones">
+                                <button class="decrementar" id="decre">-</button>
+                                <h1 class="contador">0</h1>
+                                <button class="incrementar" id="incre">+</button>
+                            </div>
+                        </div>
+                        <p class="product-price">2500</p>
+                        <button class="buy-button">Comprar</button>
+                        
+                    </div>
+                </div>
+                <div class="product-card panaderia">
+                    <img src="../Imagenes/croissants.avif"
+                        alt="Pan Rollo" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Croissants</h3>
+                        <p class="product-description">Deliciosos croissants dorados y crujientes por fuera, suaves y
+                            mantecosos por dentro. Perfectos para acompañar tu café favorito.</p>
+                            <div class="container">
+                                <div class="botones">
+                                    <button class="decrementar" id="decre">-</button>
+                                    <h1 class="contador">0</h1>
+                                    <button class="incrementar" id="incre">+</button>
+                                </div>
+                            </div>
+                        <p class="product-price">3000</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card panaderia">
+                    <img src="../Imagenes/pan_integral.jpg"
+                        alt="Pan Integral" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Pan Integral</h3>
+                        <p class="product-description">Pan saludable con una mezcla de semillas y granos, perfecto para
+                            tostar y acompañar con mantequilla o mermelada.</p>
+                            <div class="container">
+                                <div class="botones">
+                                    <button class="decrementar" id="decre">-</button>
+                                    <h1 class="contador">0</h1>
+                                    <button class="incrementar" id="incre">+</button>
+                                </div>
+                            </div>
+                        <p class="product-price"><span>6000</span></p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card bebidas">
+                    <img src="../Imagenes/tinto.jpeg" alt="Café Tinto Tradicional" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Tinto Tradicional</h3>
+                        <p class="product-description">Café colombiano 100% arábica, servido negro y aromático. Ideal
+                            para puristas.</p>
+                            <div class="container">
+                                <div class="botones">
+                                    <button class="decrementar" id="decre">-</button>
+                                    <h1 class="contador">0</h1>
+                                    <button class="incrementar" id="incre">+</button>
+                                </div>
+                            </div>
+                        <p class="product-price">2500</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card bebidas">
+                    <img src="../Imagenes/Latte.webp"
+                        alt="Latte" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Latte</h3>
+                        <p class="product-description">Mezcla cremosa de espresso y leche vaporizada, con un toque de
+                            arte latte opcional.</p>
+                            <div class="container">
+                                <div class="botones">
+                                    <button class="decrementar" id="decre">-</button>
+                                    <h1 class="contador">0</h1>
+                                    <button class="incrementar" id="incre">+</button>
+                                </div>
+                            </div>
+                        <p class="product-price">6000</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card bebidas">
+                    <img src="../Imagenes/te.jpeg"
+                        alt="te de frutos rojos" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Té de Frutos Rojos</h3>
+                        <p class="product-description">Mezcla de hierbas con frutas deshidratadas, dulce y sin cafeína.
+                        </p>
+                        <div class="container">
+                            <div class="botones">
+                                <button class="decrementar" id="decre">-</button>
+                                <h1 class="contador">0</h1>
+                                <button class="incrementar" id="incre">+</button>
+                            </div>
+                        </div>
+                        <p class="product-price">4000</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card sandwiches">
+                    <img src="../Imagenes/sandwiches_carne.avif"
+                        alt="sandwich_carne" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Sandwich de Carne</h3>
+                        <p class="product-description">Carne de res, queso derretido, vegetales frescos y salsa de cilantro en pan tostado. ¡Irresistible!
+                        </p>
+                        <div class="container">
+                            <div class="botones">
+                                <button class="decrementar" id="decre">-</button>
+                                <h1 class="contador">0</h1>
+                                <button class="incrementar" id="incre">+</button>
+                            </div>
+                        </div>
+                        <p class="product-price">7000</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card sandwiches">
+                    <img src="../Imagenes/sandwich_pollo.jpg"
+                        alt="sandwich_pollo" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Sandwich de Pollo</h3>
+                        <p class="product-description">La combinación perfecta, pollo desmechado jugoso, vegetales frescos y pan tostado para un bocado satisfactorio.</p>
+                        <div class="container">
+                            <div class="botones">
+                                <button class="decrementar" id="decre">-</button>
+                                <h1 class="contador">0</h1>
+                                <button class="incrementar" id="incre">+</button>
+                            </div>
+                        </div>
+                        <p class="product-price">9000</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card sandwiches">
+                    <img src="../Imagenes/Sanduche-champiñones.jpg"
+                        alt="sandwich_pollo" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Sandwich de Champiñones</h3>
+                        <p class="product-description">Jugoso pollo desmechado con cremosos champiñones en salsa especial y vegetales frescos</p>
+                        <div class="container">
+                            <div class="botones">
+                                <button class="decrementar" id="decre">-</button>
+                                <h1 class="contador">0</h1>
+                                <button class="incrementar" id="incre">+</button>
+                            </div>
+                        </div>
+                        <p class="product-price">12000</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Modal para el carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h1>Carrito de Compras</h1>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <h2><strong>Total a pagar: <span id="total-price">0</span></strong></h2>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Pagar</button>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contáctanos:</p>
+            <div class="social-icons" id="social-media-section">
+                <a href="https://wa.me/573001112233" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/tucuenta" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tucuenta" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:contacto@cafeco.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">© 2025 Café & Co. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕ Cafe & Co.</title>
+    <link rel="stylesheet" href="estilos.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../Imagenes/logo.png" alt="Logo del Café" class="logo-img">
+            <div class="slogan">El mejor café de la ciudad</div>
+        </div>
+        <div class="bg-2">
+            <h1 class="t-stroke-shadow">Café & Co.</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../Inicio/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="../Menu/index.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="#social-media-section"><i class="fas fa-envelope"></i> Contacto</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="banner">
+        <div class="reservation-form-container">
+            <h2>Haz tu reservación</h2>
+            <form action="reservar.php" method="POST" class="reservation-form">
+                <div class="input-container">
+                    <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+        
+                <div class="input-container">
+                    <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+        
+                <div class="input-container">
+                    <label for="phone"><i class="fas fa-phone-alt"></i> Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" required>
+                </div>
+        
+                <div class="input-container">
+                    <label for="date"><i class="fas fa-calendar-alt"></i> Fecha:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+        
+                <div class="input-container">
+                    <label for="time"><i class="fas fa-clock"></i> Hora:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+        
+                <div class="input-container">
+                    <label for="guests"><i class="fas fa-users"></i> Número de Personas:</label>
+                    <input type="number" id="guests" name="guests" min="1" placeholder="Cantidad de personas" required>
+                </div>
+        
+                <button type="submit" class="btn-reserve">Reservar</button>
+            </form>
+        </div>
+    
+        <div class="reservation-table-container">
+            <h2>Tu Reservación</h2>
+            <table class="reservation-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo Electrónico</th>
+                        <th>Teléfono</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Número de Personas</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las filas de las reservaciones se agregarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contáctanos:</p>
+            <div class="social-icons" id="social-media-section">
+                <a href="https://wa.me/573001112233" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/tucuenta" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tucuenta" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:contacto@cafeco.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">© 2025 Café & Co. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
