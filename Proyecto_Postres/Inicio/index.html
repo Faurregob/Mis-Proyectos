@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Delicias Mágicas" class="logo">
+            <div class="slogan">
+                <p>¡Endulzamos tus momentos especiales!</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Filtros de precios -->
+        <div class="filters">
+            <select id="price-filter">
+                <option value="all">Todos los precios</option>
+                <option value="0-50">$0 - $50</option>
+                <option value="50-100">$50 - $100</option>
+                <option value="100+">Más de $100</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section class="carousel" id="inicio">
+        <div class="carousel-container">
+            <img src="img/desayuno1.jpg" alt="Desayuno sorpresa 1" class="carousel-img active">
+            <img src="img/desayuno2.jpg" alt="Desayuno sorpresa 2" class="carousel-img">
+            <img src="img/desayuno3.jpg" alt="Desayuno sorpresa 3" class="carousel-img">
+        </div>
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Tarjetas de productos -->
+    <section class="products" id="productos">
+        <h2>Nuestros Desayunos Sorpresa</h2>
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card" data-price="45">
+                <img src="img/producto1.jpg" alt="Desayuno Romántico">
+                <h3>Desayuno Romántico</h3>
+                <p class="description">Incluye frutas, panes, jugo y flores frescas. Perfecto para aniversarios.</p>
+                <p class="price">$45.000</p>
+                <button class="btn-add">Añadir al carrito</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-card" data-price="60">
+                <img src="img/producto2.jpg" alt="Desayuno Premium">
+                <h3>Desayuno Premium</h3>
+                <p class="description">Chocolates gourmet, vino espumoso y desayuno completo.</p>
+                <p class="price">$60.000</p>
+                <button class="btn-add">Añadir al carrito</button>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+    <script src="../Inicio/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
